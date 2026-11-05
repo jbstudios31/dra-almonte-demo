@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultorio Dra. Melecia Almonte | Odontología general y ortodoncia en Santo Domingo</title>
+  <meta name="description" content="Consultorio Dra. Melecia Almonte: odontología general, ortodoncia, implantes, estética dental y endodoncia en Santo Domingo. Diagnóstico digital y trato cercano. Agenda por WhatsApp." />
+  <meta name="theme-color" content="#fbf7f0" />
+  <meta property="og:title" content="Consultorio Dra. Melecia Almonte" />
+  <meta property="og:description" content="Odontología general, ortodoncia y estética dental con trato humano y tecnología digital. Santo Domingo, República Dominicana." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232b4266'/%3E%3Cpath d='M32 15c-3.4 0-4.6 1.8-7 1.8-2.2 0-4.3-1.3-5.8 1.8-2 4.2.6 8.7 1.6 15 .8 4.8.5 15.4 4.2 15.4 2.9 0 2.1-8.6 4.6-8.6s1.7 8.6 4.6 8.6c3.7 0 3.4-10.6 4.2-15.4 1-6.3 3.6-10.8 1.6-15-1.5-3.1-3.6-1.8-5.8-1.8-2.4 0-3.6-1.8-7-1.8z' fill='%23f6d7da'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --paper:#fbf7f0;
+      --card:#fffdf9;
+      --ink:#23324d;
+      --muted:#6f7889;
+      --line:#ece1d4;
+      --navy:#2b4266;
+      --navy-ink:#1d2d49;
+      --navy-deep:#1b2740;
+      --navy-footer:#141c2e;
+      --rose:#d98a93;
+      --rose-ink:#c06f7b;
+      --rose-soft:#e8aeb5;
+      --gold:#b98a4d;
+      --gold-ink:#9a6f39;
+      --gold-soft:#d4b98a;
+      --cream:#f3e9dc;
+      --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+      --font-body:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+      --shadow:0 1px 2px rgba(27,39,64,.05),0 10px 26px rgba(27,39,64,.06);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--font-body);
+      font-size:16px;
+      line-height:1.65;
+      color:var(--ink);
+      background:var(--paper);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit}
+    img,svg{display:block}
+
+    /* ---------- Layout ---------- */
+    .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+    section{scroll-margin-top:92px}
+
+    /* ---------- Header ---------- */
+    header{
+      position:sticky;top:0;z-index:20;
+      background:rgba(251,249,245,.88);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      border-bottom:1px solid transparent;
+      transition:border-color .25s ease;
+    }
+    header.scrolled{border-bottom-color:var(--line)}
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      height:72px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand-mark{flex:none;width:46px;height:46px;border-radius:50%;object-fit:contain}
+    .brand-name{font-family:var(--font-display);font-weight:600;font-size:1.02rem;letter-spacing:-.01em;line-height:1.15}
+    .brand-tag{
+      display:block;font-family:var(--font-body);font-weight:500;
+      font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    }
+    .nav-links{display:flex;align-items:center;gap:30px}
+    .nav-links a{
+      font-size:.9rem;font-weight:500;color:var(--ink);text-decoration:none;
+      transition:color .2s ease;
+    }
+    .nav-links a:hover{color:var(--gold-ink)}
+    .nav-phone{
+      font-size:.9rem;font-weight:600;color:var(--gold-ink) !important;
+      padding-left:30px;border-left:1px solid var(--line);
+    }
+
+    /* ---------- Buttons ---------- */
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      background:var(--navy);color:#fff;text-decoration:none;
+      font-family:var(--font-body);font-weight:600;font-size:.95rem;
+      padding:16px 32px;border-radius:999px;
+      box-shadow:0 10px 24px -10px rgba(29,45,73,.5);
+      transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
+    }
+    .btn:hover{background:var(--navy-ink);transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(29,45,73,.55)}
+    .btn svg{width:18px;height:18px}
+    .link-arrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-weight:600;font-size:.95rem;color:var(--ink);text-decoration:none;
+      border-bottom:1px solid var(--gold);padding-bottom:2px;
+      transition:color .2s ease,border-color .2s ease;
+    }
+    .link-arrow:hover{color:var(--gold-ink)}
+    .link-arrow svg{width:15px;height:15px;transition:transform .2s ease}
+    .link-arrow:hover svg{transform:translateX(3px)}
+
+    /* ---------- Hero ---------- */
+    .hero{padding:104px 0 88px;text-align:center}
+    .hero-logo{
+      width:112px;height:112px;margin:0 auto 30px;border-radius:50%;
+      object-fit:contain;
+      box-shadow:0 20px 44px -20px rgba(43,66,102,.45);
+    }
+    .kicker{
+      display:inline-flex;align-items:center;gap:14px;
+      font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--rose-ink);
+    }
+    .kicker::before,.kicker::after{content:"";width:34px;height:1px;background:var(--rose-soft)}
+    .hero h1{
+      font-family:var(--font-display);font-weight:500;
+      font-size:clamp(2.5rem,6.4vw,4.3rem);
+      line-height:1.12;letter-spacing:-.02em;
+      max-width:16ch;margin:26px auto 20px;text-wrap:balance;
+    }
+    .hero h1 em{font-style:italic;color:var(--rose-ink)}
+    .hero-sub{max-width:56ch;margin:0 auto 36px;font-size:1.08rem;color:var(--muted)}
+    .hero-cta{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;align-items:center}
+    .hero-strip{
+      display:flex;justify-content:center;align-items:center;gap:0;
+      margin-top:74px;flex-wrap:wrap;
+    }
+    .hero-strip span{
+      display:flex;align-items:center;gap:10px;
+      font-size:.83rem;font-weight:500;color:var(--muted);
+      padding:4px 26px;white-space:nowrap;
+    }
+    .hero-strip span + span{border-left:1px solid var(--line)}
+    .hero-strip svg{width:15px;height:15px;color:var(--gold);flex:none}
+
+    /* ---------- Sections ---------- */
+    .section{padding:96px 0}
+    .section-head{text-align:center;margin-bottom:56px}
+    .section-head .kicker{margin-bottom:14px}
+    .section-head .kicker::before,.section-head .kicker::after{width:28px}
+    h2{
+      font-family:var(--font-display);font-weight:500;
+      font-size:clamp(1.9rem,3.4vw,2.7rem);
+      letter-spacing:-.015em;line-height:1.15;text-wrap:balance;
+    }
+    .sub{max-width:52ch;margin:14px auto 0;color:var(--muted);font-size:.98rem}
+    .section-tint{background:var(--card)}
+
+    /* ---------- Services ---------- */
+    .services-grid{
+      display:grid;gap:1px;
+      grid-template-columns:repeat(3,1fr);
+      background:var(--line);
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+    }
+    .service{
+      background:var(--paper);
+      padding:38px 32px 34px;
+      transition:background .25s ease;
+    }
+    .service:hover{background:#fff}
+    .service-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px}
+    .service-ico{color:var(--navy)}
+    .service-ico svg{width:26px;height:26px}
+    .service-num{
+      font-family:var(--font-display);font-style:italic;
+      font-size:.95rem;color:var(--rose-soft);
+    }
+    .service h3{
+      font-family:var(--font-display);font-weight:500;
+      font-size:1.18rem;letter-spacing:-.01em;margin-bottom:8px;
+    }
+    .service p{font-size:.9rem;color:var(--muted);max-width:34ch}
+
+    /* ---------- About ---------- */
+    .about{
+      display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center;
+    }
+    .about-figure{
+      border-radius:20px;aspect-ratio:4/4.6;overflow:hidden;
+      background:linear-gradient(160deg,#f8f1e7,#ecdcc6);
+      border:1px solid var(--line);
+      display:grid;place-items:center;
+      box-shadow:var(--shadow);
+    }
+    .about-mono{text-align:center}
+    .about-logo{
+      width:152px;height:152px;margin:0 auto 24px;border-radius:50%;
+      object-fit:contain;
+      box-shadow:0 16px 34px -18px rgba(43,66,102,.5);
+    }
+    .about-mono .tick{width:30px;height:1px;background:rgba(185,138,77,.55);margin:0 auto 14px}
+    .about-mono p{
+      font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);
+    }
+    .quote{
+      font-family:var(--font-display);font-style:italic;font-weight:500;
+      font-size:clamp(1.4rem,2.4vw,1.8rem);line-height:1.4;
+      color:var(--rose-ink);margin-bottom:22px;text-wrap:balance;
+    }
+    .about-txt > p:not(.quote){color:var(--muted);font-size:.98rem;max-width:52ch;margin-bottom:30px}
+    .about-txt strong{color:var(--ink);font-weight:600}
+
+    /* ---------- Contact ---------- */
+    .contact{background:var(--navy-deep);color:#c3cdde}
+    .contact .kicker{color:var(--rose-soft)}
+    .contact .kicker::before,.contact .kicker::after{background:rgba(232,174,181,.5)}
+    .contact h2{color:#fff}
+    .contact .sub{color:#9daabf}
+    .contact-grid{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:44px;
+      margin-top:56px;
+    }
+    .contact-grid .label{
+      display:flex;align-items:center;gap:10px;
+      font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--rose-soft);margin-bottom:16px;
+    }
+    .contact-grid .label svg{width:15px;height:15px}
+    .contact-grid p{font-size:.93rem;line-height:1.7;color:#c3cdde}
+    .contact-grid a{color:#f0f3f9;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s ease,color .2s ease}
+    .contact-grid a:hover{color:#fff;border-bottom-color:var(--rose-soft)}
+    .contact-actions{display:flex;flex-direction:column;gap:9px;margin-top:14px}
+    .wa-btn{
+      display:inline-flex;align-items:center;gap:10px;
+      background:var(--gold);color:var(--navy-ink);text-decoration:none;
+      font-weight:600;font-size:.88rem;
+      padding:12px 22px;border-radius:999px;width:fit-content;
+      transition:background .2s ease,color .2s ease,transform .2s ease;
+    }
+    .wa-btn:hover{background:#8a6130;color:#fff;transform:translateY(-1px)}
+    .wa-btn svg{width:16px;height:16px}
+
+    /* ---------- Footer ---------- */
+    footer{
+      background:var(--navy-footer);color:#8e99b0;
+      border-top:1px solid rgba(255,255,255,.08);
+      padding:26px 0;font-size:.8rem;
+    }
+    .footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    footer a{color:#c9d1df;text-decoration:none}
+    footer a:hover{color:var(--gold-soft)}
+
+    /* ---------- Reveal ---------- */
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:960px){
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .about{grid-template-columns:1fr;gap:44px}
+      .about-figure{max-width:420px}
+      .contact-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:760px){
+      .nav-phone{display:none}
+      .nav-links{gap:20px}
+      .brand-tag{display:none}
+      .brand-name{display:none}
+      .hero{padding:76px 0 68px}
+      .hero-strip span{padding:6px 14px}
+      .hero-strip span + span{border-left:none}
+      .section{padding:72px 0}
+      .wrap{padding:0 22px}
+    }
+    @media (max-width:540px){
+      .services-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr;gap:36px}
+      .hero h1{font-size:2.3rem}
+      .hero-logo{width:94px;height:94px}
+      .hero-strip{flex-direction:column;align-items:flex-start;max-width:340px;margin-left:auto;margin-right:auto}
+      .hero-strip span{align-self:stretch;text-align:left}
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{transition:none !important;animation:none !important}
+      .reveal{opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Consultorio Dra. Melecia Almonte, inicio">
+      <img class="brand-mark" src="logo_dra_melecia_almonte.png" alt="" width="46" height="46" loading="eager" />
+      <span class="brand-name">Consultorio Dra. Melecia Almonte
+        <span class="brand-tag">Odontología general · Ortodoncia</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-phone" href="tel:+18094823202">(809) 482-3202</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <img class="hero-logo" src="logo_dra_melecia_almonte.png" alt="Logotipo del Consultorio Dra. Melecia Almonte" width="112" height="112" loading="eager" />
+      <p class="kicker">Consultorio odontológico · Santo Domingo</p>
+      <h1>Tu sonrisa, en <em>las mejores manos</em></h1>
+      <p class="hero-sub">Odontología general y especializada con trato humano y tecnología digital. Diagnóstico claro, plan a tu medida y resultados que duran.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://wa.me/18094823202?text=Hola%20Dra.%20Almonte%2C%20quiero%20agendar%20una%20cita">
+          Reservar cita por WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="link-arrow" href="tel:+18094823202">
+          Llamar ahora
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="hero-strip" role="list">
+        <span role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+          Lun a Vie · 8:00 AM – 5:00 PM
+        </span>
+        <span role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.2-6.5-10a6.5 6.5 0 1 1 13 0C18.5 15.8 12 21 12 21z"/><circle cx="12" cy="11" r="2.3"/></svg>
+          Av. Sarasota, La Julia
+        </span>
+        <span role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 8.5 0 0 1-12.4 7.6L4 20.5l1.4-4.3A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          Reserva directa sin llamadas
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="servicios">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">Servicios</p>
+        <h2>Atención integral para toda la familia</h2>
+        <p class="sub">Tratamientos respaldados por diagnóstico digital y materiales de primera calidad.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service reveal">
+          <div class="service-top">
+            <span class="service-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 6.5c0-2 2-3 4.5-3s4.5 1 4.5 3c0 1.5-.7 2.6-1.4 3.4H8.9C8.2 9.1 7.5 8 7.5 6.5z"/><path d="M12 9.9v6.2M9.9 11.6h4.2M9.9 13.6h4.2M10.7 15.6h2.6"/><path d="M12 16.1v4.4"/></svg>
+            </span>
+            <span class="service-num">01</span>
+          </div>
+          <h3>Implantes dentales</h3>
+          <p>Reemplazo permanente de piezas perdidas con titanio de alta calidad.</p>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <span class="service-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5.5l1.3 3.2 3.2 1.3-3.2 1.3L11 14.5 9.7 11.3 6.5 10l3.2-1.3z"/><path d="M17.5 14.5l.7 1.7 1.7.7-1.7.7-.7 1.7-.7-1.7-1.7-.7 1.7-.7z"/></svg>
+            </span>
+            <span class="service-num">02</span>
+          </div>
+          <h3>Estética dental</h3>
+          <p>Blanqueamiento y diseño de sonrisa con resultados naturales.</p>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <span class="service-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9.5c0-3 2.2-5 5-5s5 2 5 5c0 1.9-.6 3.2-1.1 4.6-.4 1.2-.5 5.9-2.6 5.9-1.4 0-1-3.9-1.3-3.9s.2 3.9-1.3 3.9c-2.1 0-2.2-4.7-2.6-5.9C7.6 12.7 7 11.4 7 9.5z"/><rect x="10.2" y="7.2" width="3.6" height="2.6" rx=".6"/><path d="M8.4 8.5H10M14 8.5h1.6"/></svg>
+            </span>
+            <span class="service-num">03</span>
+          </div>
+          <h3>Ortodoncia</h3>
+          <p>Brackets tradicionales y estéticos para todas las edades.</p>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <span class="service-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8.5c0 6.2 3.3 9.8 7 9.8s7-3.6 7-9.8"/><path d="M9.3 9.4v3.4M12 9.6v3.8M14.7 9.4v3.4"/><path d="M6.8 9.6h10.4"/></svg>
+            </span>
+            <span class="service-num">04</span>
+          </div>
+          <h3>Prótesis y rehabilitación</h3>
+          <p>Rehabilitación bucal completa y prótesis hechas a la medida.</p>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <span class="service-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9.5c0-3 2.2-5 5-5s5 2 5 5c0 1.9-.6 3.2-1.1 4.6-.4 1.2-.5 5.9-2.6 5.9-1.4 0-1-3.9-1.3-3.9s.2 3.9-1.3 3.9c-2.1 0-2.2-4.7-2.6-5.9C7.6 12.7 7 11.4 7 9.5z"/><path d="M11.9 9.3c-.9 2-1.7 3.9-1.1 6M12.1 9.3c.9 2 1.7 3.9 1.1 6"/></svg>
+            </span>
+            <span class="service-num">05</span>
+          </div>
+          <h3>Endodoncia</h3>
+          <p>Tratamientos de conducto mínimamente invasivos, preservando tu pieza.</p>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <span class="service-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="5" width="15" height="14" rx="2"/><circle cx="12" cy="12" r="3.2"/><path d="M7.2 8.4h.01M16.8 15.6h.01"/></svg>
+            </span>
+            <span class="service-num">06</span>
+          </div>
+          <h3>Rayos X digitales</h3>
+          <p>Diagnóstico preciso, en el momento y con menor radiación.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="nosotros">
+    <div class="wrap about">
+      <figure class="about-figure reveal" aria-label="Espacio reservado para la fotografía de la Dra. Almonte">
+        <div class="about-mono">
+          <img class="about-logo" src="logo_dra_melecia_almonte.png" alt="Logotipo del Consultorio Dra. Melecia Almonte" width="152" height="152" loading="lazy" />
+          <div class="tick" aria-hidden="true"></div>
+          <p>Dra. Melecia Almonte · Directora clínica</p>
+        </div>
+      </figure>
+      <div class="about-txt reveal">
+        <p class="quote">“Un trato cercano y honesto, con la calidad que tu salud bucal merece.”</p>
+        <p>En el <strong>Consultorio Dra. Melecia Almonte</strong> atendemos con calidez y profesionalismo. Nuestro equipo combina experiencia clínica con tecnología moderna para ofrecerte un diagnóstico claro y un plan de tratamiento a tu medida, sin sorpresas.</p>
+        <a class="link-arrow" href="https://wa.me/18094823202">
+          Escríbenos por WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">Visítanos</p>
+        <h2>Te esperamos con atención puntual</h2>
+        <p class="sub">Ubicados en el corazón de La Julia, con estacionamiento disponible.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.2-6.5-10a6.5 6.5 0 1 1 13 0C18.5 15.8 12 21 12 21z"/><circle cx="12" cy="11" r="2.3"/></svg>
+            Ubicación
+          </p>
+          <p>Av. Sarasota, Plaza Universitaria Este,<br>Nivel 2, La Julia,<br>Santo Domingo, DN</p>
+          <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=Av.+Sarasota+Plaza+Universitaria+Este+La+Julia+Santo+Domingo" target="_blank" rel="noopener">Ver en Google Maps</a></p>
+        </div>
+        <div class="reveal">
+          <p class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+            Horario
+          </p>
+          <p>Lunes a viernes: 8:00 AM – 5:00 PM<br>Sábado: a confirmar</p>
+        </div>
+        <div class="reveal">
+          <p class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.8c.5-.5 1.4-.4 1.8.2l1.5 2c.4.5.3 1.2-.1 1.7l-.9.9c.9 1.7 2.2 3 3.9 3.9l.9-.9c.5-.4 1.2-.5 1.7-.1l2 1.5c.6.4.7 1.3.2 1.8l-1.2 1.2c-.6.6-1.4.8-2.2.6-4.9-1.1-8.8-5-9.9-9.9-.2-.8 0-1.6.6-2.2z"/></svg>
+            Contacto
+          </p>
+          <p><a href="tel:+18094823202">(809) 482-3202</a><br>WhatsApp directo para agendar</p>
+          <div class="contact-actions">
+            <a class="wa-btn" href="https://wa.me/18094823202?text=Hola%20Dra.%20Almonte%2C%20quiero%20agendar%20una%20cita">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 8.5 0 0 1-12.4 7.6L4 20.5l1.4-4.3A8.5 8.5 0 1 1 21 11.5z"/></svg>
+              Agendar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.8 7.3h.01"/></svg>
+            Redes
+          </p>
+          <p><a href="https://instagram.com/centrodental_dra.ma" target="_blank" rel="noopener">@centrodental_dra.ma</a><br>Resultados y novedades del consultorio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Consultorio Dra. Melecia Almonte · Santo Domingo, República Dominicana</span>
+    <span>Sitio demo desarrollado por Jose Antonio Rojas</span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var header = document.querySelector('header');
+    var onScroll = function(){ header.classList.toggle('scrolled', window.scrollY > 8); };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry, i){
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i * 70) + 'ms';
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    items.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
